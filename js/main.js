@@ -4,19 +4,11 @@
 $(function onPageLoad() {
   $('#filterer-query').on('input', inputChange).focus()
 
-//  let p = jQuery.getJSON('https://www.ifixit.com/api/2.0/wikis/CATEGORY?display=titles&limit=10000&offset=1&pretty')
-//  p.then((data) => {
-//    fillFromList('#filterer-results', data)
-//    fuzzySearch.register('#filterer-results')
-//  })
-
   let p = jQuery.getJSON('https://www.ifixit.com/api/2.0/wikis/CATEGORY?display=titles&limit=10000&offset=1&pretty')
   p.then((data) => {
-    //fillFromList('#filterer-results', data)
+    fillFromList('#filterer-results', data)
     fuzzySearch.register('#filterer-results')
   })
-
-
   
 
 })
