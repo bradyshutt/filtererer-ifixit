@@ -1,0 +1,18 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-color: black;
+  font-family: helvetica;
+}
+
+header {
+  background-color: #f4f400;
+  text-align: center;
+  font-weight: 900;
+  font-size: 64px;
+}
+
+
